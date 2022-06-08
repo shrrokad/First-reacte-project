@@ -1,0 +1,498 @@
+@import "./Colore.scss";
+
+.product-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    .product-card {
+        border: 2px solid #7B7D7D;
+        margin-bottom: 10%;
+        width: 320px;
+        margin-right: 2%;
+        height: 430px;
+
+        .main-container {
+            border-bottom: 1px solid #7B7D7D;
+        }
+
+        .images {
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $black;
+    }
+
+    .card {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .card-body {
+        text-align: start !important;
+
+        .card-Text {
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .card-price {
+            color: #C0392B;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+/* ...............product-details............... */
+
+
+.border {
+    border: 1px solid rgba(34, 36, 38, .15);
+    margin-top: 3%;
+    .img {
+        padding: 10px;
+        text-align: center;
+        border-right: 1px solid rgba(34, 36, 38, .15);
+
+        img {
+            width: 500px;
+        }
+    }
+
+    .item {
+        border-left: 1px solid rgba(34, 36, 38, .15);
+        padding-left: 35px;
+        padding-right: 35px;
+        padding: 10px 35px 10px 35px;
+
+        .title-item {
+            margin-bottom: 5%;
+        }
+
+        .category {
+            font-size: 20px;
+            font-weight: 500;
+            color: #9C640C;
+            background-color: #F2F3F4;
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #B3B6B7;
+            border-radius: 3px;
+            margin-bottom: 5%;
+        }
+
+        .price {
+            font-size: 20px;
+            margin-bottom: 5%;
+            font-weight: 500;
+            background-color: $black;
+            color: #fff;
+            width: 148px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 35px 5px 5px 35px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .price:hover {
+            background-color: rgb(40, 37, 37);
+        }
+
+        .price::before {
+            content: "";
+            left: 13px;
+            top: 39%;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            height: 15px;
+            width: 15px;
+        }
+
+        .text {
+            font-size: 18px;
+            color: #777;
+            font-weight: 500;
+            line-height: 27px;
+            margin-bottom: 5%;
+        }
+
+        .button {
+            background-color: $black;
+            color: #fff;
+            margin-bottom: 5%;
+        }
+
+        .button:hover {
+            background-color: rgb(40, 37, 37);
+        }
+
+        .cartbtn {
+            background-color: #C0392B;
+            border: none;
+            padding: 8px 35px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .cartbtn:hover {
+            background-color: #A93226;
+        }
+    }
+}
+
+.backbtn {
+    background-color: $bg-colore;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 270px;
+}
+
+.backbtn:hover {
+    background-color: #A93226;
+}
+
+.loader {
+    width: 340px;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .......login-page.......... */
+
+.main-conteiner {
+    background-color: #E5E7E9;
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 20px;
+    width: 55% !important;
+    margin-top: 5% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 90px 20px;
+
+    .controlbox {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .maintext {
+        text-align: center;
+        margin-bottom: 5%;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    .childtext {
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 13px;
+        color: #808B96;
+    }
+
+    .button1 {
+        text-align: center;
+
+        button {
+            background-color: #C0392B;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        button:hover {
+            color: #fff;
+        }
+    }
+
+    .text-colore {
+        color: #C0392B;
+    }
+
+    .form-control:focus {
+        color: #C0392B !important;
+    }
+
+    .formtext {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .username {
+        margin-bottom: 2%;
+    }
+}
+
+
+
+
+/* ...............amount-page............ */
+
+.main-container-p {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #E5E7E9;
+    border: 2px solid $border;
+    padding: 30px;
+
+    .p-text {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        text-align: center;
+        margin-bottom: 3%;
+        border-bottom: 2px solid $black;
+    }
+
+    .p-image {
+        width: 100%;
+        border: 2px solid $black;
+        cursor: pointer;
+    }
+
+    .billtext {
+        text-align: start;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        font-weight: 500;
+        font-size: 17px;
+        border-bottom: 2px solid $black;
+
+    }
+
+    .closebtn {
+        text-align: end;
+        background-color: #C0392B;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 5%;
+    }
+
+    .closebtn:hover {
+        background-color: #A93226;
+    }
+
+    .editebtn {
+        text-align: end;
+        background-color: #239B56;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 2%;
+        margin-top: 5%;
+    }
+
+    .editebtn:hover {
+        background-color: #1D8348;
+    }
+
+    .p-title {
+        font-size: 20px;
+    }
+
+    .p-description {
+        margin-top: 5%;
+        font-size: 16px;
+        color: #777;
+        font-weight: 500;
+        line-height: 27px;
+        margin-bottom: 5%;
+    }
+
+    .p-price {
+        font-size: 28px;
+        font-weight: 700;
+        color: #C0392B;
+    }
+
+    .border-right {
+        border-right: 2px solid $border;
+        // padding-left: 10px;
+    }
+
+    .amount {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .p-d-text {
+        h4 {
+            margin-bottom: 10%;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+
+        .p-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10%;
+        }
+
+        .t-amount {
+            font-size: 20px;
+            color: #C0392B;
+        }
+    }
+
+    .orderbtn {
+        text-align: center;
+        background-color: #239B56;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 2%;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .orderbtn:hover {
+        background-color: #1D8348;
+    }
+
+    .addbtn {
+        border: 1px solid $black;
+        border-radius: 3px;
+        background-color: transparent;
+        padding: 10px 25px;
+        box-shadow: 2px 2px 10px -4px rgba(0, 0, 0, 0.75);
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+}
+
+// ...........navbar...............
+
+.Navbar {
+    background-color: $bgcolore;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .m-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    .logo {
+        text-decoration: none;
+        color: $black;
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+
+        span{
+            color: #9C640C;
+        }
+    }
+
+    .logo:hover {
+        color: $black;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+        margin-top: 2%;
+
+        li {
+            list-style: none;
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-size: 17px;
+                font-weight: 700;
+                transition: all .2s linear;
+            }
+            a:hover {
+                color: #C0392B;
+                border-bottom: 3px solid #C0392B;
+                
+            }
+        }
+        .sign-btn{
+            background-color: #C0392B;
+            padding: 10px 25px;
+            color: #fff;
+            border-radius: 3px;
+            
+            border: 1px solid transparent;
+            transition: all .2s linear;
+
+        }
+        .sign-btn:hover{
+            background-color: transparent;
+            border: 1px solid #C0392B;
+            color: #C0392B;
+
+        }
+        .cart{
+            background-color: transparent;
+            color: #000;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            transition: all .2s linear;
+            font-size: 30px;
+            line-height: 24px;
+
+            .badge {
+                padding: 0.35em 0.65em;
+                font-size: 11px !important ;
+            }
+        }
+        .cart:hover{
+            color: #239B56;
+
+        }
+    }
+}
